@@ -7,6 +7,7 @@ class register:
     def __init__(self,x):
         self.x=x
     def reg(self,x):
+
         x=input("Do you want to Register?[y/n]")
         if x=="y" or x=="Y":
             print("Enter registration details")
@@ -21,15 +22,29 @@ class details:
         print("Enter username")
         d.uname=input()
         print("Enter password")
-        d.pswd=str(input())
-              
+        d.pswd=input()      
 
-# places()
-# r=register("y")
-# r.reg("y")
-dd=details("s","s","s")
+class welcome(details):
+    def __init__(dt,name,uname,pswd):
+        dt.name=name
+        dt.uname=uname
+        dt.pswd=pswd
+    def login(l,uname,pswd):
+        print("Enter username")
+        l.uname=input()
+        print("Enter password")
+        l.pswd=input()
+        if l.uname==l.pswd:
+            print("Access to account success")
+        else:print("Access Denied")
+
+places()
+r=register("")
+r.reg("")
+dd=details("","","")
 dd.dtls()
-
+w=welcome("","","")
+w.login("","")
 
 
     
