@@ -6,7 +6,7 @@ class places:
 class register:
     def __init__(self,x):
         self.x=x
-    def reg():
+    def reg(self,x):
         x=input("Do you want to Register?[y/n]")
         if x=="y" or x=="Y":
             print("Enter registration details")
@@ -17,9 +17,19 @@ class details:
         dt.name=name
         dt.uname=uname
         dt.pswd=pswd
-    def dtls():
+    def dtls(d):
         print("Enter username")
-        
+        d.uname=input()
+        print("Enter password")
+        d.pswd=str(input())
+              
 
-    
+# places()
+# r=register("y")
+# r.reg("y")
+dd=details("s","s","s")
+dd.dtls()
+
+
+
     
