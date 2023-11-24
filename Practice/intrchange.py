@@ -54,8 +54,20 @@ lst=[1,2,3,4,5,6,7]
 # print(str(sum(1 for i in lst)))
 
 #list length using recursion 
-def recursion(lst):
-    if not lst:
-        return 0
-    return 1 + recursion(lst[1:])
-print(recursion(lst))
+# def recursion(lst):
+#     if not lst:
+#         return 0
+#     return 1 + recursion(lst[1:])
+# print(recursion(lst))
+
+
+number1 = input("First number: ")
+number2 = input("\nSecond number: ")
+ 
+# Adding two numbers
+# User might also enter float numbers
+sum = float(number1) + float(number2)
+ 
+# Display the sum
+# will print value in float
+print("The sum of {0} and {1} is {2}" .format(number1,number2, sum))
